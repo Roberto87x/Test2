@@ -1,0 +1,363 @@
+html, body {
+    overflow-x:hidden;
+}
+body{
+    background-color: whitesmoke;
+    margin: 0px;
+    width: 100%;
+}
+
+h1 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 100;
+    vertical-align: middle;
+}
+
+.gallery-heading {
+    
+    font-size: 20px;
+    padding: 40px;
+    text-align:center;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    padding: 5px;
+	color: black;
+	}
+
+.heading-container {
+position: relative;
+height: 200px;
+width:100%;
+background-image: url("./Images/yellow-mountain-header.jpg");
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items:center;
+}
+.header-title {
+	font-family: 'Libre Baskerville', serif;
+    color: whitesmoke;
+    font-size: 40px;
+    text-decoration: none;
+	}
+
+#top-banner {
+    display:flex;
+    justify-content:center;
+}
+
+.top-banner-item {
+    flex:1;
+    max-width: 100px;
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+	padding: 20px;
+    font-size: 22px;
+
+}
+
+#navbarSupportedContent.collapse.navbar-collapse {
+    justify-content: space-between;
+    }
+
+.navbar-nav {
+    font-family: 'Libre Baskerville', serif;
+    flex: 1;
+    justify-content: center;
+}
+nav {
+justify-content: space-between;
+}
+
+.home-content-container {
+display:flex;
+margin: 40px;
+height: 500px;
+
+}
+
+.intro-text-container {
+flex: 1;
+background-color: white;
+padding: 20px;
+
+    }
+.home-image-container {
+width: 50%;
+
+}
+
+.home-image {
+    width: 500px;
+    /* max-height: 100%; */
+    /* object-fit: contain; */
+    
+}
+
+#footer {
+    background-color: lightgrey;
+    height: 200px;
+    /* border-top: 1px solid grey */
+}
+.copyright-text {
+    padding: 16px;
+    font-size: 0.9rem;
+    text-align: right;
+    color: grey;
+}
+
+/* Gallery Page */
+
+/* header {
+    margin: 0 auto;
+    width: 90%; */
+
+
+
+#trolley-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+}
+#gallery-content {
+   
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
+}
+#gallery-pics {
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    
+}
+.gallery-item {
+    max-width: 340px;
+    /* min-width: 300px; */
+    margin: 10px;
+    position: relative;
+}
+
+.gallery-link {
+    display: absolute; 
+}
+.gallery-pics-item {
+    width: 340px;
+    height: 100%;
+    /* min-width: 300px; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+ }
+
+.hover-content {
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display:none;
+    background-color: rgba(169, 169, 169, 0.7);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hover-text {
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 20px;
+
+}
+.price {
+    font-size: 20px;
+}
+.dimensions {
+    font-size: 20px;
+}
+.sold-tag {
+    font-size: 20px;
+    color: rgb(114, 11, 11);
+}
+.gallery-item:hover > a > div, .gallery-item:active > a > div {
+    display: block;
+}
+
+.magnifying-glass {
+    height: 30px;
+    opacity: 1;
+    display: block;
+    margin-left: 48%;
+    color: whitesmoke
+}
+/* Contact Form */
+#form-intro {
+    width: 60%;
+    margin-left:20%;
+    margin-right:20%;
+}
+#form-container {
+    width: 60%;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+label {
+    font-family: 'Libre Baskerville', serif;
+    padding: 5px;
+	color: black;
+    margin: 5px;
+    
+}
+input {
+    margin: 10px;
+    padding: 5px;
+}
+#name {
+    display:block;
+}
+
+#email {
+    display:block;
+    margin-bottom: 30px;
+}
+
+#message {
+    display:block;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 400px;
+    padding: 10px;
+}
+#submit-btn {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+/* Product Page */
+
+#product-page-container {
+    /* display: flex; */
+    flex-direction: column;
+    width: 60%;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+.product-page-image-link {
+    width: 100%;
+    
+}
+.product-page-image {
+  height: 100vh;
+}
+#additional-images-container {
+    display: flex;
+    justify-content: left;
+    height: 140px;;
+ 
+}
+.additional-image {
+    
+    margin-right: 10px;
+}
+
+.fancybox__caption {
+   font-size: 1rem;
+   font-family: 'Libre Baskerville', serif;
+   text-decoration: none;
+   color: red;
+   
+}
+.fancybox__caption > a {
+    
+    color: whitesmoke;
+    font-size: 1rem;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* MOBILE */
+@media screen and (max-width: 576px) {
+    .gallery-item {
+        /* width: 360px;
+        max-width: 360px; */
+        margin: 10px auto;
+        /* margin-left: 50px; */
+        position: relative;
+    
+    }
+ 
+    .gallery-pics-item {
+        width: 260px;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+     }
+    
+    
+    #gallery-content { 
+    width: 90%;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+    #gallery-pics { 
+    /* display: flex;
+    flex: 1;
+    justify-content: center; */
+   
+   
+   
+    position: relative; 
+    
+}
+#message {
+    width: 60%;
+  
+}
+
+
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .gallery-item {
+        /* max-width: 100%; */
+        min-width: 234px;
+        margin: 10px;
+        position: relative;
+       
+    }
+ 
+    /* .gallery-pics-item {
+        max-width: 234px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: block;
+     } */
+    
+    #gallery-content { 
+    width: 90%;
+    margin-left:5%;
+    margin-right:5%;
+    background-color: red;
+}
+
+    #gallery-pics { 
+    /* width: 90%; */
+    /* margin-left:5%;
+    margin-right:5%; */
+    /* margin: auto; */
+    
+}
+}
+

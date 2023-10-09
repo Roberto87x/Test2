@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-1</title>
+
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+</head>
+<body>
+    <header>
+        <div class = "heading-container">
+          <div class="h1-container">
+            <a id="header-title" href="./index.html">Rob Osman Art</a>
+          </div>
+          <div id="trolley-container">
+            <img id="trolley-icon" src="Images/trolley.png">
+          </div>
+        </div>
+        <div id="top-banner">
+          <a class="top-banner-item" href = "index.html">Home</a>
+          <a class="top-banner-item" href = "gallery.html">Gallery</a>
+          <a class="top-banner-item">About</a>
+          <a class="top-banner-item" href="./contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div id="product-page-container">
+        <a class="product-page-image-link" href="./Images/IMG_4462.jpg" data-fancybox="gallery" data-caption="Test Caption">
+            <img class="product-page-image" src="./Images/IMG_4462.jpg" alt="">
+        </a>
+        <div id="additional-images-container">
+            <img class="additional-image" src="./Images/Reduced Size Images/IMG_4729-reduced.jpg" data-fancybox="gallery">
+            <img class="additional-image" src="./Images/Reduced Size Images/IMG_4644-reduced.jpg" data-fancybox="gallery">
+        </div>
+        <p>Painting Name</p>
+        <p>Painting Details</p>
+        <p>Painting Price</p>
+
+        <!-- Enquire about this piece-->
+        <div style="padding: 20px;">
+        <a class="enquire-button" href="contact.html?painting='Sunlit Foothills'">Enquire about this piece</a>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+      });    
+    </script>
+</body>
+</html>
